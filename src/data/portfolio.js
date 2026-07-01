@@ -23,6 +23,30 @@ export const projects = [
     accent: 'from-cyan-300 to-violet-500',
   },
   {
+    title: 'Mult Private Finance',
+    description:
+      'Portal patrimonial em Streamlit com login demo, indicadores financeiros, relatórios e alertas de relacionamento.',
+    technologies: ['Python', 'Streamlit', 'Pandas', 'Relatórios'],
+    href: '#contato',
+    accent: 'from-emerald-300 to-cyan-500',
+  },
+  {
+    title: 'Site Plother',
+    description:
+      'Site institucional com hero visual, carousel responsivo, tratamento de imagens e layout comercial moderno.',
+    technologies: ['Next.js', 'React', 'CSS', 'UX'],
+    href: '#contato',
+    accent: 'from-sky-400 to-indigo-500',
+  },
+  {
+    title: 'Analytics Dashboard',
+    description:
+      'Mini-app analítico com dados sintéticos, gráficos, exportação CSV/XLSX e visualização de métricas operacionais.',
+    technologies: ['Python', 'Streamlit', 'NumPy', 'OpenPyXL'],
+    href: '#contato',
+    accent: 'from-lime-300 to-blue-500',
+  },
+  {
     title: 'HelpDesk Pro',
     description:
       'Sistema de atendimento para organizar chamados, clientes, status e fluxos internos com visÃ£o operacional clara.',

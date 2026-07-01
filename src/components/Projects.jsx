@@ -38,7 +38,7 @@ export default function Projects() {
         description="Algumas soluções estruturadas para atendimento, automação, jurídico e geração de conteúdo."
       />
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5">
+      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
         {projects.map((project) => (
           <ProjectCard key={project.title} project={project} />
         ))}
