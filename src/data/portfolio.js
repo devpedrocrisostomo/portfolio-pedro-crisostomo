@@ -27,7 +27,7 @@ export const projects = [
     description:
       'Portal patrimonial em Streamlit com login demo, indicadores financeiros, relatórios e alertas de relacionamento.',
     technologies: ['Python', 'Streamlit', 'Pandas', 'Relatórios'],
-    href: 'https://github.com/devpedrocrisostomo/rad-finance',
+    href: '#contato',
     accent: 'from-emerald-300 to-cyan-500',
   },
   {
@@ -51,7 +51,7 @@ export const projects = [
     description:
       'Sistema de atendimento para organizar chamados, clientes, status e fluxos internos com visão operacional clara.',
     technologies: ['Java 21', 'Jakarta EE', 'PostgreSQL', 'Docker'],
-    href: 'https://devpedrocrisostomo.github.io/helpdesk-pro/',
+    href: '#contato',
     accent: 'from-cyan-400 to-blue-500',
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     description:
       'Plataforma para automações de conteúdo, gestão de rotinas digitais e integrações com canais sociais.',
     technologies: ['React', 'TypeScript', 'N8N', 'Automação'],
-    href: 'https://github.com/devpedrocrisostomo/socialflow',
+    href: '#contato',
     accent: 'from-violet-400 to-cyan-400',
   },
   {
@@ -67,7 +67,7 @@ export const projects = [
     description:
       'Solução para fluxos jurídicos, organização de processos, cadastros e automações de comunicação.',
     technologies: ['Node.js', 'PostgreSQL', 'Prisma', 'APIs'],
-    href: 'https://github.com/devpedrocrisostomo/jurisflow',
+    href: '#contato',
     accent: 'from-blue-400 to-emerald-300',
   },
   {
@@ -75,7 +75,7 @@ export const projects = [
     description:
       'Ferramenta para geração e renderização de vídeos dinâmicos com templates, automações e interface web.',
     technologies: ['Next.js', 'Remotion', 'IA', 'SaaS'],
-    href: 'https://github.com/devpedrocrisostomo/motion-video-renderer-MVP',
+    href: '#contato',
     accent: 'from-fuchsia-400 to-sky-400',
   },
 ];

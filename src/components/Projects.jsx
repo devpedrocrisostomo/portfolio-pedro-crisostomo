@@ -2,7 +2,6 @@ import { projects } from '../data/portfolio.js';
 import SectionTitle from './SectionTitle.jsx';
 
 function ProjectCard({ project }) {
-  const isExternalLink = project.href.startsWith('http');
 
   return (
     <article className="card-3d gradient-border glass-panel group flex min-h-[270px] flex-col rounded-2xl p-5">
@@ -23,8 +22,6 @@ function ProjectCard({ project }) {
 
       <a
         href={project.href}
-        target={isExternalLink ? '_blank' : undefined}
-        rel={isExternalLink ? 'noopener noreferrer' : undefined}
         className="mt-6 inline-flex w-fit rounded-full border border-cyan-300/40 px-4 py-2 text-xs font-bold text-cyan-200 transition group-hover:bg-cyan-300 group-hover:text-slate-950"
       >
         Ver mais
