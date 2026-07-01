@@ -25,9 +25,9 @@ export const projects = [
   {
     title: 'Mult Private Finance',
     description:
-      'Portal patrimonial em Streamlit com login demo, indicadores financeiros, relat�rios e alertas de relacionamento.',
-    technologies: ['Python', 'Streamlit', 'Pandas', 'Relat�rios'],
-    href: '#contato',
+      'Portal patrimonial em Streamlit com login demo, indicadores financeiros, relatórios e alertas de relacionamento.',
+    technologies: ['Python', 'Streamlit', 'Pandas', 'Relatórios'],
+    href: 'https://github.com/devpedrocrisostomo/rad-finance',
     accent: 'from-emerald-300 to-cyan-500',
   },
   {
@@ -41,7 +41,7 @@ export const projects = [
   {
     title: 'Analytics Dashboard',
     description:
-      'Mini-app anal�tico com dados sint�ticos, gr�ficos, exporta��o CSV/XLSX e visualiza��o de m�tricas operacionais.',
+      'Mini-app analítico com dados sintéticos, gráficos, exportação CSV/XLSX e visualização de métricas operacionais.',
     technologies: ['Python', 'Streamlit', 'NumPy', 'OpenPyXL'],
     href: '#contato',
     accent: 'from-lime-300 to-blue-500',
@@ -50,8 +50,8 @@ export const projects = [
     title: 'HelpDesk Pro',
     description:
       'Sistema de atendimento para organizar chamados, clientes, status e fluxos internos com visão operacional clara.',
-    technologies: ['React', 'Node.js', 'SaaS', 'APIs'],
-    href: '#contato',
+    technologies: ['Java 21', 'Jakarta EE', 'PostgreSQL', 'Docker'],
+    href: 'https://devpedrocrisostomo.github.io/helpdesk-pro/',
     accent: 'from-cyan-400 to-blue-500',
   },
   {
@@ -59,7 +59,7 @@ export const projects = [
     description:
       'Plataforma para automações de conteúdo, gestão de rotinas digitais e integrações com canais sociais.',
     technologies: ['React', 'TypeScript', 'N8N', 'Automação'],
-    href: '#contato',
+    href: 'https://github.com/devpedrocrisostomo/socialflow',
     accent: 'from-violet-400 to-cyan-400',
   },
   {
@@ -67,15 +67,15 @@ export const projects = [
     description:
       'Solução para fluxos jurídicos, organização de processos, cadastros e automações de comunicação.',
     technologies: ['Node.js', 'PostgreSQL', 'Prisma', 'APIs'],
-    href: '#contato',
+    href: 'https://github.com/devpedrocrisostomo/jurisflow',
     accent: 'from-blue-400 to-emerald-300',
   },
   {
     title: 'Plataforma de Vídeos Motion',
     description:
       'Ferramenta para geração e renderização de vídeos dinâmicos com templates, automações e interface web.',
-    technologies: ['React', 'Motion', 'IA', 'SaaS'],
-    href: '#contato',
+    technologies: ['Next.js', 'Remotion', 'IA', 'SaaS'],
+    href: 'https://github.com/devpedrocrisostomo/motion-video-renderer-MVP',
     accent: 'from-fuchsia-400 to-sky-400',
   },
 ];
@@ -96,4 +96,3 @@ export const technologies = [
   'RAG',
   'Automação',
 ];
-
