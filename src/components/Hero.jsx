@@ -1,60 +1,64 @@
 export default function Hero() {
-  return (
-    <section id="inicio" className="relative min-h-screen pt-24">
-      <div className="section-shell grid min-h-[calc(100vh-6rem)] items-center gap-12 pb-16 lg:grid-cols-[1.08fr_0.92fr]">
-        <div className="animate-reveal">
-          <div className="mb-6 inline-flex rounded-full border border-cyan-300/20 bg-cyan-300/10 px-4 py-2 text-sm font-semibold text-cyan-200">
-            Desenvolvimento web, automações e produtos digitais
-          </div>
+  const focusAreas = ['SaaS sob medida', 'Automações operacionais', 'IA aplicada a processos', 'Integrações com APIs'];
 
-          <h1 className="max-w-4xl text-5xl font-extrabold leading-tight text-white sm:text-6xl lg:text-7xl">
-            Pedro Crisóstomo
+  return (
+    <section id="inicio" className="section-shell pt-28 lg:min-h-screen lg:pt-14">
+      <div className="grid min-h-[calc(100vh-7rem)] gap-10 lg:grid-cols-[minmax(0,1.06fr)_minmax(320px,0.94fr)] lg:items-end">
+        <div className="min-w-0 self-center lg:self-end">
+          <p className="index-meta mb-8 text-xs font-bold uppercase text-[color:var(--color-accent)]">
+            Desenvolvimento web · automações · IA aplicada
+          </p>
+
+          <h1 aria-label="Pedro Crisóstomo" className="display-wrap max-w-4xl text-[length:var(--text-display)] font-extrabold leading-[0.98] tracking-[-0.02em] text-white">
+            <span className="block">Pedro</span>
+            <span className="block">Crisóstomo</span>
           </h1>
 
-          <p className="mt-5 text-xl font-semibold text-cyan-200 sm:text-2xl">
-            Desenvolvedor Web | Automações | IA | SaaS
-          </p>
+          <div className="mt-8 grid min-w-0 gap-6 border-t border-[color:var(--color-rule)] pt-6 md:grid-cols-[0.8fr_1fr]">
+            <p className="display-wrap min-w-0 text-xl font-semibold leading-8 text-[color:var(--color-accent)]">
+              Desenvolvedor Web | Automações | IA | SaaS
+            </p>
+            <p className="display-wrap max-w-2xl min-w-0 text-base leading-8 text-slate-300 sm:text-lg">
+              Crio aplicações web modernas, automações inteligentes e soluções SaaS para empresas que precisam
+              transformar processos em sistemas digitais eficientes, seguros e escaláveis.
+            </p>
+          </div>
 
-          <p className="mt-6 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-            Crio aplicações web modernas, automações inteligentes e soluções SaaS para empresas que precisam
-            transformar processos em sistemas digitais eficientes, seguros e escaláveis.
-          </p>
-
-          <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#projetos"
-              className="inline-flex items-center justify-center rounded-full bg-cyan-300 px-7 py-4 text-sm font-bold text-slate-950 shadow-glow transition hover:-translate-y-1 hover:bg-cyan-200"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] bg-[color:var(--color-accent)] px-6 py-3 text-sm font-bold text-[color:var(--color-accent-ink)] transition hover:-translate-y-0.5 hover:bg-sky-200 active:translate-y-0"
             >
-              Ver Projetos
+              Ver projetos
             </a>
             <a
               href="#contato"
-              className="inline-flex items-center justify-center rounded-full border border-white/15 bg-white/[0.06] px-7 py-4 text-sm font-bold text-white backdrop-blur transition hover:-translate-y-1 hover:border-cyan-300/50 hover:bg-white/10"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-[color:var(--color-accent)] active:translate-y-0"
             >
-              Entrar em Contato
+              Entrar em contato
             </a>
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-md animate-float lg:max-w-lg">
-          <div className="gradient-border glass-panel aspect-[4/5] rounded-[2rem] p-5">
-            <div className="relative flex h-full flex-col justify-end overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900">
-              <img
-                src="/pedro-crisostomo.png"
-                alt="Foto de Pedro Crisóstomo"
-                className="absolute inset-0 h-full w-full object-cover object-[50%_38%]"
-              />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,6,23,0.02)_0%,rgba(2,6,23,0.08)_48%,rgba(2,6,23,0.88)_100%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(135deg,rgba(34,211,238,0.18),transparent_36%),linear-gradient(315deg,rgba(168,85,247,0.16),transparent_36%)]" />
-              <div className="relative m-4 rounded-2xl border border-white/10 bg-slate-950/75 p-5 backdrop-blur">
-                <p className="text-sm font-semibold text-cyan-200">Pedro Crisóstomo</p>
-                <p className="mt-2 text-sm leading-6 text-slate-300">
-                  Desenvolvedor focado em interfaces premium, integrações e automações que reduzem trabalho manual.
-                </p>
+        <aside className="glass-panel self-end rounded-[var(--radius-card)] p-6 sm:p-7">
+          <p className="index-meta text-xs font-bold uppercase text-[color:var(--color-accent)]">Atuação</p>
+          <h2 className="mt-5 max-w-sm text-2xl font-extrabold leading-tight text-white">
+            Execução técnica para produtos que precisam funcionar em operação real.
+          </h2>
+          <p className="mt-5 text-sm leading-7 text-slate-300">
+            Do diagnóstico ao deploy, organizo interfaces, dados, integrações e automações para reduzir trabalho manual
+            e dar previsibilidade ao negócio.
+          </p>
+
+          <div className="mt-7 divide-y divide-[color:var(--color-rule)] border-y border-[color:var(--color-rule)]">
+            {focusAreas.map((item) => (
+              <div key={item} className="flex items-center justify-between gap-4 py-4">
+                <span className="text-sm font-semibold text-slate-100">{item}</span>
+                <span className="index-meta text-[10px] uppercase text-slate-500">Entrega</span>
               </div>
-            </div>
+            ))}
           </div>
-        </div>
+        </aside>
       </div>
     </section>
   );

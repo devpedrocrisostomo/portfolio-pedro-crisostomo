@@ -1,0 +1,8 @@
+{
+  "fontStack": "Inter via Google Fonts and Tailwind sans",
+  "palette": "dark cyan portfolio palette in tokens.css",
+  "motion": "minimal transform and opacity transitions",
+  "spacing": "4-point token scale in tokens.css",
+  "framework": "Vite + React + TailwindCSS",
+  "scannedAt": "2026-07-15"
+}

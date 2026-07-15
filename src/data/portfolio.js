@@ -81,18 +81,40 @@ export const projects = [
 ];
 
 export const technologies = [
-  'HTML',
-  'CSS',
-  'JavaScript',
-  'React',
-  'Node.js',
-  'TypeScript',
-  'Python',
-  'PostgreSQL',
-  'Prisma',
-  'APIs',
-  'N8N',
-  'Inteligência Artificial',
-  'RAG',
-  'Automação',
+  {
+    title: 'Frontend',
+    description: 'Interfaces responsivas, performáticas e prontas para produção.',
+    skills: ['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Next.js', 'TailwindCSS'],
+    accent: 'from-cyan-300 to-blue-500',
+  },
+  {
+    title: 'Backend e APIs',
+    description: 'Serviços, integrações e regras de negócio com estrutura limpa.',
+    skills: ['Node.js', 'FastAPI', 'Java 21', 'Jakarta EE', 'REST APIs', 'Prisma'],
+    accent: 'from-emerald-300 to-cyan-500',
+  },
+  {
+    title: 'Dados e IA',
+    description: 'Produtos com busca semântica, RAG, dashboards e automações inteligentes.',
+    skills: ['Python', 'Pandas', 'LanceDB', 'RAG', 'OpenAI API', 'Analytics'],
+    accent: 'from-violet-400 to-fuchsia-500',
+  },
+  {
+    title: 'Banco e DevOps',
+    description: 'Persistência, deploy e ambientes organizados para operação real.',
+    skills: ['PostgreSQL', 'Docker', 'Git', 'Vite', 'Streamlit', 'Deploy'],
+    accent: 'from-lime-300 to-sky-500',
+  },
+  {
+    title: 'Automações',
+    description: 'Fluxos para reduzir trabalho manual e conectar ferramentas do negócio.',
+    skills: ['N8N', 'Webhooks', 'Integrações', 'Relatórios', 'CSV/XLSX', 'SaaS'],
+    accent: 'from-amber-300 to-cyan-500',
+  },
+  {
+    title: 'Design de interface',
+    description: 'Interfaces com hierarquia clara, responsividade e aparência profissional.',
+    skills: ['UI Design', 'UX', 'Design System', 'Responsividade', 'Acessibilidade', 'Layout profissional'],
+    accent: 'from-slate-300 to-sky-500',
+  },
 ];

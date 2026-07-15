@@ -5,37 +5,39 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed left-0 right-0 top-0 z-50 border-b border-white/10 bg-slate-950/75 backdrop-blur-xl">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[color:var(--color-paper)]/90 backdrop-blur-xl lg:bottom-0 lg:left-0 lg:right-auto lg:w-64 lg:border-b-0 lg:border-r">
+      <nav className="flex items-center justify-between px-5 py-4 lg:h-full lg:flex-col lg:items-start lg:p-6">
         <a href="#inicio" className="group flex items-center gap-3" aria-label="Ir para o início">
-          <span className="grid h-10 w-10 place-items-center rounded-xl border border-cyan-300/30 bg-cyan-300/10 text-sm font-bold text-cyan-200 shadow-glow">
+          <span className="grid h-10 w-10 place-items-center rounded-[var(--radius-card)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] text-sm font-bold text-[color:var(--color-accent)]">
             PC
           </span>
-          <span className="hidden text-sm font-semibold text-white sm:block">Pedro Crisóstomo</span>
+          <span className="text-sm font-semibold leading-none text-white">Pedro Crisóstomo</span>
         </a>
 
-        <div className="hidden items-center gap-1 rounded-full border border-white/10 bg-white/[0.04] p-1 md:flex">
+        <div className="hidden w-full lg:mt-14 lg:flex lg:flex-col lg:gap-1">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-4 py-2 text-sm font-medium text-slate-300 transition hover:bg-white/10 hover:text-white"
+              className="group flex items-center justify-between border-b border-white/10 py-3 text-sm font-semibold text-slate-300 transition hover:text-white"
             >
-              {item.label}
+              <span>{item.label}</span>
+              <span className="text-[10px] text-slate-600 transition group-hover:text-[color:var(--color-accent)]">/</span>
             </a>
           ))}
         </div>
 
         <a
           href="#contato"
-          className="hidden rounded-full bg-cyan-300 px-5 py-2.5 text-sm font-bold text-slate-950 transition hover:bg-cyan-200 lg:inline-flex"
+          className="hidden w-full items-center justify-between rounded-[var(--radius-card)] border border-[color:var(--color-accent)] px-4 py-3 text-sm font-bold text-[color:var(--color-accent)] transition hover:bg-[color:var(--color-accent)] hover:text-[color:var(--color-accent-ink)] lg:flex"
         >
-          Contato
+          <span>Contato</span>
+          <span aria-hidden="true">→</span>
         </a>
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-xl border border-white/10 bg-white/[0.06] md:hidden"
+          className="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-white/10 bg-white/[0.06] md:hidden"
           onClick={() => setIsOpen((current) => !current)}
           aria-label="Abrir menu"
           aria-expanded={isOpen}
@@ -49,14 +51,14 @@ export default function Header() {
       </nav>
 
       {isOpen && (
-        <div className="border-t border-white/10 bg-slate-950/95 px-5 py-4 md:hidden">
-          <div className="mx-auto grid max-w-7xl gap-2">
+        <div className="border-t border-white/10 bg-[color:var(--color-paper)] px-5 py-4 md:hidden">
+          <div className="grid gap-1">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-xl px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                className="rounded-[var(--radius-card)] px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
               >
                 {item.label}
               </a>

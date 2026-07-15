@@ -1,19 +1,24 @@
 import { projects } from '../data/portfolio.js';
 import SectionTitle from './SectionTitle.jsx';
 
-function ProjectCard({ project }) {
-
+function ProjectCard({ project, index }) {
   return (
-    <article className="card-3d gradient-border glass-panel group flex min-h-[270px] flex-col rounded-2xl p-5">
-      <div className={`mb-5 h-1.5 w-20 rounded-full bg-gradient-to-r ${project.accent}`} />
-      <h3 className="text-xl font-bold leading-tight text-white">{project.title}</h3>
-      <p className="mt-3 flex-1 text-sm leading-6 text-slate-300">{project.description}</p>
+    <article className="glass-panel group flex min-h-[300px] flex-col rounded-[var(--radius-card)] p-5 transition hover:border-[color:var(--color-accent)]">
+      <div className="mb-5 flex items-center justify-between border-b border-[color:var(--color-rule)] pb-4">
+        <span className="index-meta text-[11px] font-bold uppercase text-[color:var(--color-accent)]">
+          Projeto {String(index + 1).padStart(2, '0')}
+        </span>
+        <span className="h-px w-10 bg-[color:var(--color-rule)]" />
+      </div>
 
-      <div className="mt-5 flex flex-wrap gap-2">
+      <h3 className="display-wrap text-2xl font-extrabold leading-tight text-white">{project.title}</h3>
+      <p className="mt-4 flex-1 text-sm leading-7 text-slate-300">{project.description}</p>
+
+      <div className="mt-6 flex flex-wrap gap-2">
         {project.technologies.map((tech) => (
           <span
             key={tech}
-            className="rounded-full border border-white/10 bg-white/[0.06] px-2.5 py-1 text-[11px] font-semibold text-slate-200"
+            className="rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] px-2.5 py-1 text-[11px] font-semibold text-slate-300"
           >
             {tech}
           </span>
@@ -22,9 +27,9 @@ function ProjectCard({ project }) {
 
       <a
         href={project.href}
-        className="mt-6 inline-flex w-fit rounded-full border border-cyan-300/40 px-4 py-2 text-xs font-bold text-cyan-200 transition group-hover:bg-cyan-300 group-hover:text-slate-950"
+        className="mt-7 inline-flex w-fit items-center gap-2 whitespace-nowrap text-sm font-bold text-[color:var(--color-accent)] transition hover:text-sky-100"
       >
-        Ver mais
+        Ver detalhes <span aria-hidden="true">→</span>
       </a>
     </article>
   );
@@ -39,9 +44,9 @@ export default function Projects() {
         description="Soluções para atendimento, automação, jurídico, IA e geração de conteúdo."
       />
 
-      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
-        {projects.map((project) => (
-          <ProjectCard key={project.title} project={project} />
+      <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+        {projects.map((project, index) => (
+          <ProjectCard key={project.title} project={project} index={index} />
         ))}
       </div>
     </section>
