@@ -90,9 +90,8 @@ export default function Hero() {
 
           <div className="mt-6 divide-y divide-[color:var(--color-rule)] border-y border-[color:var(--color-rule)]">
             {focusAreas.map((item) => (
-              <div key={item} className="flex items-center justify-between gap-4 py-4">
+              <div key={item} className="py-4">
                 <span className="text-sm font-semibold text-[color:var(--color-ink)]">{item}</span>
-                <span className="text-[11px] font-bold uppercase text-[color:var(--color-muted)]">Base</span>
               </div>
             ))}
           </div>
