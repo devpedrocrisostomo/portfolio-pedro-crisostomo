@@ -12,7 +12,7 @@ export default function Hero() {
           </p>
 
           <h1 className="display-wrap max-w-4xl text-[length:var(--text-display)] font-extrabold leading-[1.02] text-[color:var(--color-ink)]">
-            Pedro Crisóstomo · Tecnologia, CRM e Automações
+            Pedro Crisóstomo • Analista de Sistemas
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[color:var(--color-ink-2)]">
