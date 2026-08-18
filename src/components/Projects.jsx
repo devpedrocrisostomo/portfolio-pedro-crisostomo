@@ -4,11 +4,10 @@ import SectionTitle from './SectionTitle.jsx';
 function ProjectCard({ project, index }) {
   return (
     <article className="surface-card group flex min-h-[300px] flex-col rounded-[var(--radius-card)] p-5 transition hover:-translate-y-1 hover:border-[color:var(--color-accent)] hover:shadow-xl">
-      <div className="mb-5 flex items-center justify-between border-b border-[color:var(--color-rule)] pb-4">
+      <div className="mb-5 border-b border-[color:var(--color-rule)] pb-4">
         <span className="text-[11px] font-bold uppercase text-[color:var(--color-accent)]">
           Projeto {String(index + 1).padStart(2, '0')}
         </span>
-        <span className="text-[11px] font-bold uppercase text-[color:var(--color-muted)]">Case</span>
       </div>
 
       <h3 className="display-wrap text-2xl font-extrabold leading-tight text-[color:var(--color-ink)]">{project.title}</h3>
@@ -29,7 +28,7 @@ function ProjectCard({ project, index }) {
         href={project.href}
         className="mt-7 inline-flex w-fit items-center gap-2 whitespace-nowrap text-sm font-bold text-[color:var(--color-accent)] transition hover:text-[color:var(--color-accent-2)]"
       >
-        Conversar sobre o case <span aria-hidden="true">→</span>
+        Conversar sobre o projeto <span aria-hidden="true">→</span>
       </a>
     </article>
   );
