@@ -19,6 +19,21 @@ export const navItems = [
 
 export const experiences = [
   {
+    company: 'Parceria Consultores',
+    role: 'Estagiário de Tecnologia e Inovação',
+    period: '2026 – 2026',
+    items: [
+      'Estruturação e análise de fluxos operacionais, identificando gargalos e oportunidades de melhoria.',
+      'Mapeamento de processos e identificação de atividades que poderiam ser otimizadas ou automatizadas.',
+      'Uso de ferramentas low-code, Inteligência Artificial e plataformas digitais para automatizar rotinas.',
+      'Desenvolvimento de soluções para reduzir tarefas manuais, desperdícios, retrabalho e atividades repetitivas.',
+      'Acompanhamento da performance operacional e de indicadores para avaliar ganhos de produtividade.',
+      'Organização de processos internos e registro/acompanhamento de informações em plataformas digitais.',
+      'Desenvolvimento de soluções de produtividade para facilitar o trabalho da equipe.',
+      'Suporte à equipe nas ferramentas e processos utilizados, contribuindo para melhoria contínua.',
+    ],
+  },
+  {
     company: 'FollowOp Inova Simples',
     role: 'Desenvolvedor de Automações',
     period: '2025 – 2026',
@@ -40,21 +55,6 @@ export const experiences = [
       'Manutenção e acompanhamento de sistemas utilizados na operação.',
       'Apoio na automação de rotinas internas utilizando planilhas e scripts.',
       'Organização, controle, tratamento de dados e resolução de problemas tecnológicos da equipe.',
-    ],
-  },
-  {
-    company: 'Parceria Consultores',
-    role: 'Estagiário de Tecnologia e Inovação',
-    period: '2026 – 2026',
-    items: [
-      'Estruturação e análise de fluxos operacionais, identificando gargalos e oportunidades de melhoria.',
-      'Mapeamento de processos e identificação de atividades que poderiam ser otimizadas ou automatizadas.',
-      'Uso de ferramentas low-code, Inteligência Artificial e plataformas digitais para automatizar rotinas.',
-      'Desenvolvimento de soluções para reduzir tarefas manuais, desperdícios, retrabalho e atividades repetitivas.',
-      'Acompanhamento da performance operacional e de indicadores para avaliar ganhos de produtividade.',
-      'Organização de processos internos e registro/acompanhamento de informações em plataformas digitais.',
-      'Desenvolvimento de soluções de produtividade para facilitar o trabalho da equipe.',
-      'Suporte à equipe nas ferramentas e processos utilizados, contribuindo para melhoria contínua.',
     ],
   },
   {
