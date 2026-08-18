@@ -1,60 +1,53 @@
+import { contact } from '../data/portfolio.js';
+
 export default function Hero() {
-  const focusAreas = ['SaaS sob medida', 'Automações operacionais', 'IA aplicada a processos', 'Integrações com APIs'];
+  const focusAreas = ['Followop, Kommo CRM e Salesbot', 'APIs REST, Webhooks e JSON', 'n8n, SQL, Python e dados', 'Suporte técnico e sustentação'];
 
   return (
-    <section id="inicio" className="section-shell pt-28 lg:min-h-screen lg:pt-14">
-      <div className="grid min-h-[calc(100vh-7rem)] gap-10 lg:grid-cols-[minmax(0,1.06fr)_minmax(320px,0.94fr)] lg:items-end">
-        <div className="min-w-0 self-center lg:self-end">
-          <p className="index-meta mb-8 text-xs font-bold uppercase text-[color:var(--color-accent)]">
-            Desenvolvimento web · automações · IA aplicada
+    <section id="inicio" className="section-shell pt-32 sm:pt-36">
+      <div className="grid gap-10 border-b border-[color:var(--color-rule)] pb-14 lg:grid-cols-[minmax(0,1.05fr)_minmax(320px,0.95fr)] lg:items-end lg:pb-20">
+        <div className="min-w-0">
+          <p className="mb-5 text-sm font-bold text-[color:var(--color-accent)]">
+            Currículo digital profissional
           </p>
 
-          <h1 aria-label="Pedro Crisóstomo" className="display-wrap max-w-4xl text-[length:var(--text-display)] font-extrabold leading-[0.98] tracking-[-0.02em] text-white">
-            <span className="block">Pedro</span>
-            <span className="block">Crisóstomo</span>
+          <h1 className="display-wrap max-w-4xl text-[length:var(--text-display)] font-extrabold leading-[1.02] text-[color:var(--color-ink)]">
+            Pedro Crisóstomo · Tecnologia, CRM e Automações
           </h1>
 
-          <div className="mt-8 grid min-w-0 gap-6 border-t border-[color:var(--color-rule)] pt-6 md:grid-cols-[0.8fr_1fr]">
-            <p className="display-wrap min-w-0 text-xl font-semibold leading-8 text-[color:var(--color-accent)]">
-              Desenvolvedor Web | Automações | IA | SaaS
-            </p>
-            <p className="display-wrap max-w-2xl min-w-0 text-base leading-8 text-slate-300 sm:text-lg">
-              Crio aplicações web modernas, automações inteligentes e soluções SaaS para empresas que precisam
-              transformar processos em sistemas digitais eficientes, seguros e escaláveis.
-            </p>
-          </div>
+          <p className="mt-7 max-w-2xl text-lg leading-8 text-[color:var(--color-ink-2)]">
+            Profissional de TI com experiência em CRM, integrações entre sistemas, APIs REST, Webhooks, automação de
+            processos e suporte técnico. Atuo na implantação, configuração e sustentação de fluxos integrados a CRMs e
+            canais digitais.
+          </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
-              href="#projetos"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] bg-[color:var(--color-accent)] px-6 py-3 text-sm font-bold text-[color:var(--color-accent-ink)] transition hover:-translate-y-0.5 hover:bg-sky-200 active:translate-y-0"
-            >
-              Ver projetos
-            </a>
-            <a
-              href="#contato"
-              className="inline-flex items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] px-6 py-3 text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-[color:var(--color-accent)] active:translate-y-0"
+              href={contact.whatsAppHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] px-6 py-3 text-sm font-bold text-[color:var(--color-ink)] transition hover:-translate-y-0.5 hover:border-[color:var(--color-accent)] active:translate-y-0"
             >
               Entrar em contato
             </a>
           </div>
         </div>
 
-        <aside className="glass-panel self-end rounded-[var(--radius-card)] p-6 sm:p-7">
-          <p className="index-meta text-xs font-bold uppercase text-[color:var(--color-accent)]">Atuação</p>
-          <h2 className="mt-5 max-w-sm text-2xl font-extrabold leading-tight text-white">
-            Execução técnica para produtos que precisam funcionar em operação real.
+        <aside className="surface-card rounded-[var(--radius-card)] p-6 sm:p-7">
+          <p className="text-xs font-bold uppercase text-[color:var(--color-accent)]">Objetivo profissional</p>
+          <h2 className="mt-4 max-w-sm text-2xl font-extrabold leading-tight text-[color:var(--color-ink)]">
+            Atuar com sistemas, integrações, automação e melhoria de processos.
           </h2>
-          <p className="mt-5 text-sm leading-7 text-slate-300">
-            Do diagnóstico ao deploy, organizo interfaces, dados, integrações e automações para reduzir trabalho manual
-            e dar previsibilidade ao negócio.
+          <p className="mt-4 text-sm leading-7 text-[color:var(--color-ink-2)]">
+            Busco contribuir com experiência em CRM, APIs, Webhooks, suporte técnico e soluções digitais para
+            implantação, sustentação e evolução de processos tecnológicos.
           </p>
 
-          <div className="mt-7 divide-y divide-[color:var(--color-rule)] border-y border-[color:var(--color-rule)]">
+          <div className="mt-6 divide-y divide-[color:var(--color-rule)] border-y border-[color:var(--color-rule)]">
             {focusAreas.map((item) => (
               <div key={item} className="flex items-center justify-between gap-4 py-4">
-                <span className="text-sm font-semibold text-slate-100">{item}</span>
-                <span className="index-meta text-[10px] uppercase text-slate-500">Entrega</span>
+                <span className="text-sm font-semibold text-[color:var(--color-ink)]">{item}</span>
+                <span className="text-[11px] font-bold uppercase text-[color:var(--color-muted)]">Base</span>
               </div>
             ))}
           </div>

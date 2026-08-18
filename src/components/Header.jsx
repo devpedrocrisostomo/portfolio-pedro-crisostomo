@@ -5,60 +5,58 @@ export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[color:var(--color-paper)]/90 backdrop-blur-xl lg:bottom-0 lg:left-0 lg:right-auto lg:w-64 lg:border-b-0 lg:border-r">
-      <nav className="flex items-center justify-between px-5 py-4 lg:h-full lg:flex-col lg:items-start lg:p-6">
-        <a href="#inicio" className="group flex items-center gap-3" aria-label="Ir para o início">
-          <span className="grid h-10 w-10 place-items-center rounded-[var(--radius-card)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] text-sm font-bold text-[color:var(--color-accent)]">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)]/92 backdrop-blur-xl">
+      <nav className="section-shell flex items-center justify-between py-4">
+        <a href="#inicio" className="flex items-center gap-3" aria-label="Ir para o início">
+          <span className="grid h-10 w-10 place-items-center rounded-[var(--radius-card)] bg-[color:var(--color-accent)] text-sm font-bold text-[color:var(--color-accent-ink)]">
             PC
           </span>
-          <span className="text-sm font-semibold leading-none text-white">Pedro Crisóstomo</span>
+          <span className="text-sm font-bold leading-none text-[color:var(--color-ink)]">Pedro Crisóstomo</span>
         </a>
 
-        <div className="hidden w-full lg:mt-14 lg:flex lg:flex-col lg:gap-1">
+        <div className="hidden items-center gap-6 lg:flex">
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="group flex items-center justify-between border-b border-white/10 py-3 text-sm font-semibold text-slate-300 transition hover:text-white"
+              className="text-sm font-semibold text-[color:var(--color-ink-2)] transition hover:text-[color:var(--color-accent)]"
             >
-              <span>{item.label}</span>
-              <span className="text-[10px] text-slate-600 transition group-hover:text-[color:var(--color-accent)]">/</span>
+              {item.label}
             </a>
           ))}
         </div>
 
         <a
           href="#contato"
-          className="hidden w-full items-center justify-between rounded-[var(--radius-card)] border border-[color:var(--color-accent)] px-4 py-3 text-sm font-bold text-[color:var(--color-accent)] transition hover:bg-[color:var(--color-accent)] hover:text-[color:var(--color-accent-ink)] lg:flex"
+          className="hidden items-center justify-center whitespace-nowrap rounded-[var(--radius-pill)] border border-[color:var(--color-accent)] px-4 py-2.5 text-sm font-bold text-[color:var(--color-accent)] transition hover:bg-[color:var(--color-accent)] hover:text-[color:var(--color-accent-ink)] lg:inline-flex"
         >
-          <span>Contato</span>
-          <span aria-hidden="true">→</span>
+          Conversar
         </a>
 
         <button
           type="button"
-          className="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-white/10 bg-white/[0.06] md:hidden"
+          className="grid h-11 w-11 place-items-center rounded-[var(--radius-card)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] lg:hidden"
           onClick={() => setIsOpen((current) => !current)}
           aria-label="Abrir menu"
           aria-expanded={isOpen}
         >
           <span className="flex flex-col gap-1.5">
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
-            <span className="block h-0.5 w-5 rounded-full bg-white" />
+            <span className="block h-0.5 w-5 rounded-full bg-[color:var(--color-ink)]" />
+            <span className="block h-0.5 w-5 rounded-full bg-[color:var(--color-ink)]" />
+            <span className="block h-0.5 w-5 rounded-full bg-[color:var(--color-ink)]" />
           </span>
         </button>
       </nav>
 
       {isOpen && (
-        <div className="border-t border-white/10 bg-[color:var(--color-paper)] px-5 py-4 md:hidden">
+        <div className="border-t border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] px-5 py-4 lg:hidden">
           <div className="grid gap-1">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
                 onClick={() => setIsOpen(false)}
-                className="rounded-[var(--radius-card)] px-4 py-3 text-sm font-medium text-slate-200 transition hover:bg-white/10"
+                className="rounded-[var(--radius-card)] px-4 py-3 text-sm font-semibold text-[color:var(--color-ink-2)] transition hover:bg-[color:var(--color-paper-3)]"
               >
                 {item.label}
               </a>

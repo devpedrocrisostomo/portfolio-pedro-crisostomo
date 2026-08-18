@@ -43,12 +43,12 @@ const contactItems = [
 function ContactCard({ item }) {
   const content = (
     <>
-      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[var(--radius-card)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-2)] text-white">
+      <span className="grid h-10 w-10 shrink-0 place-items-center rounded-[var(--radius-card)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-3)] text-[color:var(--color-ink)]">
         {item.icon}
       </span>
       <span className="min-w-0">
-        <span className="index-meta block text-[11px] font-bold uppercase text-[color:var(--color-accent)]">{item.label}</span>
-        <span className="mt-1 block break-words text-sm font-semibold leading-6 text-white sm:text-base">
+        <span className="block text-[11px] font-bold uppercase text-[color:var(--color-accent)]">{item.label}</span>
+        <span className="mt-1 block break-words text-sm font-semibold leading-6 text-[color:var(--color-ink)] sm:text-base">
           {item.value}
         </span>
       </span>
@@ -80,13 +80,13 @@ export default function Contact() {
     <section id="contato" className="section-shell pb-12">
       <SectionTitle
         eyebrow="Contato"
-        title="Vamos construir sua próxima solução digital"
-        description="Disponível para projetos web, automações, integrações com IA e sistemas sob medida."
+        title="Contato profissional"
+        description="Canais para falar comigo sobre oportunidades, projetos, sistemas, automações e integrações."
       />
 
-      <div className="grid gap-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
-        <p className="text-2xl font-extrabold leading-tight text-white sm:text-3xl">
-          Me chama com o problema, o processo ou a ideia. Eu transformo em produto utilizável.
+      <div className="surface-card grid gap-8 rounded-[var(--radius-card)] p-6 sm:p-8 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)]">
+        <p className="text-2xl font-extrabold leading-tight text-[color:var(--color-ink)] sm:text-3xl">
+          Disponível para contribuir com CRM, APIs, automações, suporte técnico e sustentação de sistemas.
         </p>
         <div>
           {contactItems.map((item) => (

@@ -3,22 +3,22 @@ import SectionTitle from './SectionTitle.jsx';
 
 function ProjectCard({ project, index }) {
   return (
-    <article className="glass-panel group flex min-h-[300px] flex-col rounded-[var(--radius-card)] p-5 transition hover:border-[color:var(--color-accent)]">
+    <article className="surface-card group flex min-h-[300px] flex-col rounded-[var(--radius-card)] p-5 transition hover:-translate-y-1 hover:border-[color:var(--color-accent)] hover:shadow-xl">
       <div className="mb-5 flex items-center justify-between border-b border-[color:var(--color-rule)] pb-4">
-        <span className="index-meta text-[11px] font-bold uppercase text-[color:var(--color-accent)]">
+        <span className="text-[11px] font-bold uppercase text-[color:var(--color-accent)]">
           Projeto {String(index + 1).padStart(2, '0')}
         </span>
-        <span className="h-px w-10 bg-[color:var(--color-rule)]" />
+        <span className="text-[11px] font-bold uppercase text-[color:var(--color-muted)]">Case</span>
       </div>
 
-      <h3 className="display-wrap text-2xl font-extrabold leading-tight text-white">{project.title}</h3>
-      <p className="mt-4 flex-1 text-sm leading-7 text-slate-300">{project.description}</p>
+      <h3 className="display-wrap text-2xl font-extrabold leading-tight text-[color:var(--color-ink)]">{project.title}</h3>
+      <p className="mt-4 flex-1 text-sm leading-7 text-[color:var(--color-ink-2)]">{project.description}</p>
 
       <div className="mt-6 flex flex-wrap gap-2">
         {project.technologies.map((tech) => (
           <span
             key={tech}
-            className="rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] px-2.5 py-1 text-[11px] font-semibold text-slate-300"
+            className="rounded-[var(--radius-pill)] border border-[color:var(--color-rule)] bg-[color:var(--color-paper-3)] px-2.5 py-1 text-[11px] font-semibold text-[color:var(--color-ink-2)]"
           >
             {tech}
           </span>
@@ -27,9 +27,9 @@ function ProjectCard({ project, index }) {
 
       <a
         href={project.href}
-        className="mt-7 inline-flex w-fit items-center gap-2 whitespace-nowrap text-sm font-bold text-[color:var(--color-accent)] transition hover:text-sky-100"
+        className="mt-7 inline-flex w-fit items-center gap-2 whitespace-nowrap text-sm font-bold text-[color:var(--color-accent)] transition hover:text-[color:var(--color-accent-2)]"
       >
-        Ver detalhes <span aria-hidden="true">→</span>
+        Conversar sobre o case <span aria-hidden="true">→</span>
       </a>
     </article>
   );
@@ -39,9 +39,9 @@ export default function Projects() {
   return (
     <section id="projetos" className="section-shell">
       <SectionTitle
-        eyebrow="Projetos"
-        title="Produtos digitais com foco em operação"
-        description="Soluções para atendimento, automação, jurídico, IA e geração de conteúdo."
+        eyebrow="Provas técnicas"
+        title="Projetos que demonstram lógica, dados e integração"
+        description="Complemento ao currículo: sistemas, dashboards e automações que mostram domínio técnico aplicado."
       />
 
       <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">

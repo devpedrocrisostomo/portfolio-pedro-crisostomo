@@ -5,32 +5,32 @@ export default function About() {
     <section id="sobre" className="section-shell">
       <SectionTitle
         eyebrow="Sobre mim"
-        title="Tecnologia aplicada a processos reais"
-        description="Atuação completa entre estratégia, desenvolvimento e integração para transformar ideias em sistemas úteis."
+        title="Perfil analítico para sistemas, CRM e integrações"
+        description="Resumo profissional alinhado à rotina de implantação, configuração, sustentação e suporte de sistemas corporativos."
       />
 
       <div className="grid gap-5 lg:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)]">
-        <article className="glass-panel rounded-[var(--radius-card)] p-6 sm:p-8">
-          <p className="text-lg leading-9 text-slate-100">
-            Sou formado em Análise e Desenvolvimento de Sistemas e atuo com desenvolvimento web, automações,
-            sistemas SaaS, agentes de IA, integrações com APIs, WhatsApp, CRMs e soluções digitais para negócios
-            que precisam ganhar velocidade, organização e escala.
+        <article className="surface-card rounded-[var(--radius-card)] p-6 sm:p-8">
+          <p className="text-lg leading-9 text-[color:var(--color-ink)]">
+            Tenho experiência prática com n8n, Kommo CRM, APIs REST, JSON, Webhooks, Python, SQL e ferramentas de
+            análise de dados, além de vivência com suporte a sistemas e infraestrutura. Meu perfil é analítico,
+            proativo e orientado à resolução de problemas e melhoria contínua.
           </p>
         </article>
 
         <div className="grid gap-5">
-          <article className="border-t border-[color:var(--color-rule)] pt-5">
-            <p className="index-meta text-xs font-bold uppercase text-[color:var(--color-accent)]">01 · Produto</p>
-            <p className="mt-3 text-base leading-8 text-slate-300">
-              Meu foco é construir produtos com interface profissional, arquitetura simples de manter e fluxos que
-              resolvem problemas operacionais de verdade.
+          <article className="surface-card rounded-[var(--radius-card)] p-6">
+            <p className="text-xs font-bold uppercase text-[color:var(--color-accent)]">Análise</p>
+            <p className="mt-3 text-base leading-8 text-[color:var(--color-ink-2)]">
+              Atuo entendendo fluxos operacionais, acompanhando integrações, registrando falhas e convertendo problemas
+              de usuários em ações técnicas claras.
             </p>
           </article>
-          <article className="border-t border-[color:var(--color-rule)] pt-5">
-            <p className="index-meta text-xs font-bold uppercase text-[color:var(--color-accent)]">02 · Entrega</p>
-            <p className="mt-3 text-base leading-8 text-slate-300">
-              Trabalho com implementação ponta a ponta: experiência do usuário, integrações, dados, automações e
-              validação técnica para deixar a solução pronta para uso real.
+          <article className="surface-card rounded-[var(--radius-card)] p-6">
+            <p className="text-xs font-bold uppercase text-[color:var(--color-accent)]">Sustentação</p>
+            <p className="mt-3 text-base leading-8 text-[color:var(--color-ink-2)]">
+              Tenho vivência em manutenção de rotinas, automação de processos, suporte técnico, análise de dados e
+              acompanhamento de indicadores de produtividade e qualidade.
             </p>
           </article>
         </div>
